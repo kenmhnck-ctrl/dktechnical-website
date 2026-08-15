@@ -5,6 +5,14 @@
     {
       "source": "/",
       "destination": "/index.html"
+    },
+    {
+      "source": "/sapporo/",
+      "destination": "/sapporo/index.html"
+    },
+    {
+      "source": "/hakodate/",
+      "destination": "/hakodate/index.html"
     }
   ],
   "headers": [
