@@ -1,0 +1,1 @@
+export default function handler(req,res){res.status(200).json({service:'ORDNIX',status:'ok',version:'mvp-1.0',checks:{diagnose:true,plan:true,autopilot:true,content:true,followup:true,optimize:true,approval:true,report:true}})}
