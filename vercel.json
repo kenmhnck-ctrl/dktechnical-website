@@ -2,18 +2,21 @@
   "cleanUrls": true,
   "trailingSlash": false,
   "rewrites": [
-    { "source": "/", "destination": "/index.html" },
-    { "source": "/app", "destination": "/app.html" },
-    { "source": "/control", "destination": "/app.html" }
+    {"source":"/","destination":"/index.html"},
+    {"source":"/app","destination":"/app.html"},
+    {"source":"/control","destination":"/app.html"},
+    {"source":"/api/diagnose","destination":"/api/core?action=diagnose"},
+    {"source":"/api/plan","destination":"/api/core?action=plan"},
+    {"source":"/api/autopilot","destination":"/api/core?action=autopilot"},
+    {"source":"/api/content","destination":"/api/core?action=content"},
+    {"source":"/api/followup","destination":"/api/core?action=followup"},
+    {"source":"/api/optimize","destination":"/api/core?action=optimize"},
+    {"source":"/api/approval","destination":"/api/core?action=approval"},
+    {"source":"/api/crm","destination":"/api/core?action=crm"},
+    {"source":"/api/report","destination":"/api/core?action=report"},
+    {"source":"/api/onboarding","destination":"/api/core?action=onboarding"},
+    {"source":"/api/scheduler","destination":"/api/automation?action=scheduler"},
+    {"source":"/api/guard","destination":"/api/automation?action=guard"}
   ],
-  "headers": [
-    {
-      "source": "/(.*)",
-      "headers": [
-        { "key": "X-Content-Type-Options", "value": "nosniff" },
-        { "key": "X-Frame-Options", "value": "SAMEORIGIN" },
-        { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" }
-      ]
-    }
-  ]
+  "headers":[{"source":"/(.*)","headers":[{"key":"X-Content-Type-Options","value":"nosniff"},{"key":"X-Frame-Options","value":"SAMEORIGIN"},{"key":"Referrer-Policy","value":"strict-origin-when-cross-origin"}]}]
 }
