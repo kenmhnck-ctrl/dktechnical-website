@@ -3,8 +3,8 @@
   "trailingSlash": false,
   "rewrites": [
     {"source":"/","destination":"/index.html"},
-    {"source":"/app","destination":"/app.html"},
-    {"source":"/control","destination":"/app.html"},
+    {"source":"/app","destination":"/control-v2.html"},
+    {"source":"/control","destination":"/control-v2.html"},
     {"source":"/api/diagnose","destination":"/api/core?action=diagnose"},
     {"source":"/api/plan","destination":"/api/core?action=plan"},
     {"source":"/api/autopilot","destination":"/api/core?action=autopilot"},
