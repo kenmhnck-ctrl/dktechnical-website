@@ -1,0 +1,3 @@
+ORDNIX fresh deployment trigger
+2026-08-28
+API functions consolidated to core.js, automation.js, health.js.
