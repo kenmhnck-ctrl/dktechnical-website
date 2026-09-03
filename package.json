@@ -1,1 +1,1 @@
-{"name":"ordnix","private":true,"type":"module","scripts":{"test":"node tests/smoke.mjs"}}
+{"name":"ordnix","private":true,"type":"module","scripts":{"test":"node tests/smoke.mjs"},"dependencies":{"@neondatabase/serverless":"^1.0.1"}}
