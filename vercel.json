@@ -17,7 +17,10 @@
     {"source":"/api/report","destination":"/api/core?action=report"},
     {"source":"/api/onboarding","destination":"/api/core?action=onboarding"},
     {"source":"/api/scheduler","destination":"/api/automation?action=scheduler"},
-    {"source":"/api/guard","destination":"/api/automation?action=guard"}
+    {"source":"/api/guard","destination":"/api/automation?action=guard"},
+    {"source":"/api/ai-diagnose","destination":"/api/ai?action=diagnose"},
+    {"source":"/api/ai-plan","destination":"/api/ai?action=plan"},
+    {"source":"/api/ai-content","destination":"/api/ai?action=content"}
   ],
   "headers":[{"source":"/(.*)","headers":[{"key":"X-Content-Type-Options","value":"nosniff"},{"key":"X-Frame-Options","value":"SAMEORIGIN"},{"key":"Referrer-Policy","value":"strict-origin-when-cross-origin"}]}]
 }
