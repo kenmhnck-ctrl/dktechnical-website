@@ -11,4 +11,8 @@ const o=await call(core,'optimize',{visits:200,leads:18,meetings:6,contracts:1})
 const ap=await call(core,'approval',{assetId:'test',action:'approve'});if(!ap.publishEligibility)throw Error('approval');
 const q=await call(automation,'scheduler',{assetId:'test',approved:true,channel:'SEO'});if(q.status!=='QUEUED')throw Error('scheduler');
 const g=await call(automation,'guard',{channel:'email',approved:false,connected:false,consent:false});if(g.allowed)throw Error('guard');
-console.log('ORDNIX SMOKE TEST: PASS 9/9');
+const ad=await call(core,'ai_diagnose',p);if(!(ad.summary||ad.insights))throw Error('ai_diagnose');
+const aiPlan=await call(core,'ai_plan',p);if(!(aiPlan.strategy||aiPlan.priorities))throw Error('ai_plan');
+const aiContent=await call(core,'ai_content',p);if(!(aiContent.seoTitle||aiContent.social))throw Error('ai_content');
+const r=await call(core,'readiness',{});if(typeof r.database!=='boolean'||typeof r.aiAuth!=='boolean')throw Error('readiness');
+console.log('ORDNIX SMOKE TEST: PASS 13/13');
