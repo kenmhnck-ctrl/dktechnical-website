@@ -2,7 +2,7 @@
   "cleanUrls":true,"trailingSlash":false,
   "rewrites":[
     {"source":"/","destination":"/index.html"},{"source":"/app","destination":"/control-v2.html"},{"source":"/control","destination":"/control-v2.html"},{"source":"/qa","destination":"/qa.html"},
-    {"source":"/api/diagnose","destination":"/api/core?action=diagnose"},
+    {"source":"/api/auth-login","destination":"/api/auth?action=login"},{"source":"/api/diagnose","destination":"/api/core?action=diagnose"},
     {"source":"/api/plan","destination":"/api/secure-core?action=plan"},{"source":"/api/autopilot","destination":"/api/secure-core?action=autopilot"},{"source":"/api/content","destination":"/api/secure-core?action=content"},{"source":"/api/followup","destination":"/api/secure-core?action=followup"},{"source":"/api/optimize","destination":"/api/secure-core?action=optimize"},{"source":"/api/approval","destination":"/api/secure-core?action=approval"},{"source":"/api/crm","destination":"/api/secure-core?action=crm"},{"source":"/api/crm-list","destination":"/api/secure-core?action=crm_list"},{"source":"/api/report","destination":"/api/secure-core?action=report"},{"source":"/api/onboarding","destination":"/api/secure-core?action=onboarding"},{"source":"/api/readiness","destination":"/api/secure-core?action=readiness"},{"source":"/api/ai-diagnose","destination":"/api/secure-core?action=ai_diagnose"},{"source":"/api/ai-plan","destination":"/api/secure-core?action=ai_plan"},{"source":"/api/ai-content","destination":"/api/secure-core?action=ai_content"},
     {"source":"/api/scheduler","destination":"/api/secure-automation?action=scheduler"},{"source":"/api/guard","destination":"/api/secure-automation?action=guard"}
   ],
